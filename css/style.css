@@ -1,0 +1,136 @@
+/*
+CSS - Cascade Style  Sheets
+*/
+/*
+SELECTORES BÁSICOS 
+
+etiqueta {
+    propiedad: valor;
+
+}
+
+.clase {
+    propiedad: valor;
+}
+
+#id {
+    propiedad: valor;
+}
+
+*/
+
+
+h2 {
+    color: blue;
+    font-size: 40px;
+
+}
+
+.rojo {
+    color: red;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+#parrafo_especial {
+    border: 2px solid purple; /*solid: recto*/
+    font-size: 16px;
+}
+
+#letra_verde {
+    color: green;
+}
+/**/
+/*Jerarquia: id, clases, etiquetas*/
+
+/*Etiqueta strong que esta dentro de p*/
+/*izquierdo etiqueta padre, derecho etiqueta hijo*/
+p strong {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*Descendente directo*/
+.container > p {
+    border: 1px dashed red;
+}
+
+input[type="text"] {
+    width: 350px;
+}
+
+input[type="number"] {
+    height: 100px;
+}
+
+input, textarea {
+    border: 3px solid magenta;
+}
+
+#color {
+    /*Color de mi letra*/
+    color:cornflowerblue; /*Se puede seleccionar por el nombre del color*/
+    color: #ababce; /*Hexadecimal*/
+    color: rgb(8, 160, 255); /*RGB*/
+}
+
+.tamano {
+    background-color: cadetblue;
+    width: 400px;
+    height: 50px;
+}
+
+/*TEXTO */
+.texto {
+    /*left, center, right, justify*/
+    text-align: center;
+    /*underline, line-trought, none, overline*/
+    text-decoration: underline;
+    /*italic, normal*/
+    font-style: italic;
+    /*bold, normal, light, 100, 300, 900*/
+    font-weight: bold;
+    /**/
+    font-family: sans-serif;
+    /*px pt em*/
+    font-size: 20px;
+}
+
+/*BACKGROUND*/
+.fondo {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+
+    background-color: aqua;
+    /*2puntos=1 carpeta atrás*/
+    background-image: url(../img/nave3.png);
+    /*repeat, no-repeat, repeat-y*/
+    background-repeat: no-repeat;
+    /*cover: estirar verticalmente, contain: estirar horizontal*/
+    background-size: cover;
+
+}
+
+#modelo_caja {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+
+    /*Margin es el espacio entre el elemento y el resto de la página*/
+    margin: 20px; /*todos los lados tienen 20*/
+    margin-top: 100px;/*-top, -right, -bottom, -left*/
+    margin: 50px 15px; /*ArribaAbajo IzqDer*/
+    margin: 50px 10px 100px 200px; /*arriba der abajo izq*/
+
+    /*Padding es el espacio interno*/
+    padding: 20px;
+    padding-top: 50px;
+    padding: 100px 5px;
+
+    border: 2px solid black; /*solid dotted dashed double*/
+    /*centrar in div*/
+
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title>Intro a HTML</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--enlazando hoja de estilos con html-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 atributos="valor">Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4 class="rojo subrayado">Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+
+    <!--example para ver jerarquía entre ID y CLASS-->
+    <p id="letra_verde" class="rojo">Este es el primer párrafo de mi página web</p>
+
+    <p id="parrafo_especial"> <!--Comentario Alt + Z - VIEW WORD WRAP (Envolver en campo visual)-->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolores provident nam earum officia cum, alias ratione dolor sit sequi, recusandae quo. Eveniet facere debitis tenetur. Impedit nostrum porro quo. 
+    </p>
+
+    <p>
+        Párrafo con etiqueta <strong>strong</strong>
+    </p>
+
+    <strong>Strong fuera de párrafo</strong>
+
+    <div class="container">
+        <p>
+            Párrafo, Elemento hijo
+        </p>
+        <div>
+            <p>
+                Párrafo, Elemento nieto
+            </p>
+        </div>
+        <p>
+            Párrafo, También es hijo
+        </p>
+    </div>
+
+    <!-- anchor, ancla. hipervinculo enlace-->
+    <!-- _blank -->
+    <a href= "http://google.com" target="_blank"> Este es un hipervinculo</a>
+
+    <h2>Lista desordenada</h2>
+    <!--Unordered list-->
+    <ul>
+        <!--list item-->
+        <li>Gatos</li>
+        <li>Perros</li>
+        <li>Pajaros</li>
+        <li>Tlacuache</li>
+        <li>Venado</li>
+    </ul>
+
+    <h2>Lista ordenada</h2>
+    <!--ordered list-->
+    <ol>
+        <li>Entrar a la sesión de zoom</li>
+        <li>Poner mucha atención en clases</li>
+        <li>Realizar las actividades core</li>
+    </ol>
+
+    <h2>Tabla</h2>
+    <table>
+        <!--Encabezado de Tabla-->
+        <thead>
+            <!--Table row: Fila-->
+            <tr>
+                <!--Table heading: titulo-->
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <!--Cuerpo de la tabla-->
+        <tbody>
+            <!--Table row: Fila-->
+            <tr>
+                <!--Columnas-->
+                <td>Columna 1.1</td>
+                <td>Columna 1.2</td>
+                <td>Columna 1.3</td>
+            </tr>
+            <tr>
+                <td>Columna 2.1</td>
+                <td>Columna 2.2</td>
+                <td>Columna 2.3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--img no tiene etiqueta de cierre-->
+    <!--alt es texto alternativo en caso que no se vea la imagen-->
+    <img src="img/nave3.png" alt="Nave espacial">
+
+    <form action="#" method="post"> <!--action="/url-enviando-info" No va a ningun lado-->
+        <div> <!--Caja/Contenedor-->
+            <label>Llena estos campos:</label>
+            <input type="text" name="input_texto">
+            <input type="number" name="input_numeral">
+            <input type="password" name="contra">
+            <input type="date" name="fecha">
+            <input type="email" name="correo">
+        </div>
+        <div>
+            <label for="casado_id">Casado</label>
+            <input type="radio" id="casado_id" value="casado" name="estado_civil"> 
+            <br> <!--Salto de línea, BR=BREAK. Parrafos-->
+            <label for="soltero_id">Soltero</label>
+            <input type="radio" id="soltero_id" value="soltero" name="estado_civil">
+        </div>
+        <div>
+            <input type="checkbox" id="mayor" name="mayor_edad"> 
+            <label for="mayor">¿Es mayor de edad?</label>
+        </div>
+        <div>
+            <select name="Lenguaje">
+                <option value="py">Python</option>
+                <option value="j">Java</option>
+                <option value="c">C#</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="Comentario" cosl="10"></textarea> <!--cols=ancho, rows=filas-->
+        </div>
+        <div>
+            <!--Submit indica el cierre del formulario-->
+            <input type="submit" value="Guardar Info">
+        </div>
+    </form>
+
+    <h3 id="color">Prueba de color</h3>
+
+    <div class="tamano"></div>
+
+    <p class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt illum iste magnam alias architecto voluptatem asperiores fuga, quam molestiae, animi sint quaerat quis. Id libero eveniet dolor totam rem?
+    </p>
+
+    <div class="fondo">
+        Texto dentro
+    </div>
+
+    <div id="modelo_caja"></div>
+</body>
+</html>
