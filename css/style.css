@@ -134,3 +134,42 @@ input, textarea {
     /*centrar in div*/
 
 }
+
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.inline {
+    display: inline;/*Deja los elementos en una sola linea*/
+}
+
+.block {
+    /*despliega  mi elemento como bloque, no puede haber nada en la misma linea. SI puede tener un tamaño */
+    display: block;
+    width: 200px;
+}
+
+.inline-block {
+    /*despliega  mi elemento como bloque, no puede haber nada en la misma linea. SI puede tener un tamaño */
+    display: inline-block;
+    width: 300px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+#div1{
+    height: 150px;
+}
+
+#div2{
+    height: 300px;
+}
+
+#div3{
+    height: 500px;
+}
+
